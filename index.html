@@ -8,13 +8,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="author" content="James Shima"/>
-    <meta name="description" content="Portfolio for James Shima's website!"/>
+    <meta name="description" content="Portfolio of James Shima's current and future work."/>
 </head>
 
 <body>
 
     <hr/>
-    <h1>Hello there from James! This is my website!</h1>
+    <h1>Hi Zoey!</h1>
     <pre>
     ___  ________  _____ ______   _______   ________           ________  ___  ___  ___  _____ ______   ________     
    |\  \|\   __  \|\   _ \  _   \|\  ___ \ |\   ____\         |\   ____\|\  \|\  \|\  \|\   _ \  _   \|\   __  \    
@@ -29,26 +29,57 @@
 
     <div>
         <h2>Projects</h2>
-        <p>Here is a display of my work </p>
+        
+        <h3>Exercise Classifier (Python/TensorFlow)</h3>
+        <p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
+            This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
+            Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
+            of spliting the training and testing data.  Source code and more information can be found by <a href="https://github.com/jmshima01/TullyML">clicking here</a>.</p>
+        <img src="images/tully.png">
+
         <h3>Clue Game (Java)</h3>
-        <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  This project was created from the ground up using Java, JUnit, Git and Swing to create a single player interpretation of the board game. To play the game, <a href="https://github.com/jmshima01/PlayClueGame"> click here</a> and download either the Windows Executable or .jar file to run with a Java Interpeter</p>
+        <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
+            Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  
+            This project was created from the ground up using Java, JUnit, and Swing to create a single 
+            player interpretation of the board game. To play the game, <a href="https://github.com/jmshima01/PlayClueGame"> click here</a> 
+            and download either the Windows Executable or jar file to run with a Java Interpeter.</p>
         <img src="images/clueGame.png">
+
+
+        <h3>Web M.D. Plus (PostgreSQL/Python)</h3>
+        <p>A fun clone of Web M.D. to practice desigining practical relational databases using PostgreSQL and Python.</p>
+        <img src="images/webmd.png">
+        
+        <h3>Multiband Low Frequency RF Jammer (C/C++)</h3>
+
+
     </div>
 
 
+    <div>
+        <h2>Future Projects (In progress...)</h2>
+        <h3>Fifteen Minute Rule Alarm (Flutter/Dart)</h3>
+        <p> IN PROGRESS: Cross-platform application to set morning alarms based on the 15 minute rule to make mornings easier.</p>
+
+    </div>
+
 
     <div>
-        <h2>CONTACT ME</h2>
+        <h2>Contact Me</h2>
+        <a href="https://www.linkedin.com/in/james-shima-jr">Linkedin</a>
+        <a href="mailto:jamesshima@mines.edu">Email Me</a>
+        <a href="https://github.com/jmshima01">Github</a>
+        <br>
+        <h2>Send a Message</h2>
         <form>
             <label for="email">Email</label>
             <br>
             <input id = "email" type="text" placeholder="email@email.com" required/>
             <br>
-            <label for="password">Password</label>
+            <label for="message">Message</label>
             <br>
-            <input id = "password" type="password" minlength="8" required/>
+            <input id = "message" type="text"/>
             <button>Submit</button>
-
         </form>
 
 
