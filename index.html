@@ -25,17 +25,22 @@
     /* width:100%; */
     position:fixed;
     top:0px;
-    left:0px;
+    /* left:0px; */
     /* z-index:1000; */
     opacity:0.8;
 }
 
+hr{
+    left:0px;
+}
+
 .banner{
     /* background-color: black; */
-    width:100%;
-    height: 100%;
+    /* width:100%; */
     /* position:fixed; */
     background-color: black;
+    left:0px;
+    top:0px;
 
 
 
@@ -50,7 +55,7 @@
 p{
     white-space: pre-line;
     display:inline; 
-    font-size:1em; 
+    font-size: larger; 
     font-weight:normal
     
 }
@@ -63,6 +68,7 @@ h1{
     color: white;
     text-align: center;
     font-size: 70px;
+    
 
 }
 
@@ -110,8 +116,7 @@ li a img{
 body {
    background: #222;
    color: #BBB;
-   width: max-content;
-   margin: auto;
+
 }
 
 
@@ -122,13 +127,36 @@ body {
     padding-left: 80px;
 }
 
+a img:hover {
+    opacity: 0.8;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+
 
 
 </style>
 
 <body class="font">
     <!-- <div id="bannerimage"></div> -->
-    <!-- <div id="bannerimage"></div> -->
+    
     
     <div class="banner">
         <hr color="black">
@@ -140,11 +168,10 @@ body {
             <li><a href="documents/JamesShimaResume.pdf"><img src="images/resume.png" > </a></li>
             <li><a href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
         </ul>
-    <div class="space"></div>
-    <hr color="black">
+        <div class="space"></div>
     </div>
     
-    <section>
+    <section id="about">
         <h2>About Me</h2>
         <h4> 
             Hello and Welcome to my Website! 
@@ -161,53 +188,72 @@ body {
         </p>
     </section>
 
-
-    <div>
+    <section id="projects">
         <h2>Projects</h2>
         
-        <h3>Exercise Classifier (Python/TensorFlow)</h3>
-        <p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
-            This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
-            Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
-            of spliting the training and testing data.  Source code and more information can be found by <a href="https://github.com/jmshima01/TullyML">clicking here</a>.</p>
-        <img src="images/tully.png">
+            <div class="row">
+                <!-- <h3>Exercise Classifier (Python/TensorFlow)</h3> -->
+                <!-- <p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
+                    This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
+                    Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
+                    of spliting the training and testing data.  Source code and more information can be found by <a href="https://github.com/jmshima01/TullyML">clicking here</a>.</p> -->
+                <a href="https://github.com/jmshima01/TullyML"><img src="images/tully.png"></a>
+                <!-- <h3>Clue Game (Java)</h3> -->
+                <!-- <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
+                    Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  
+                    This project was created from the ground up using Java, JUnit, and Swing to create a single 
+                    player interpretation of the board game. To play the game, <a href="https://github.com/jmshima01/PlayClueGame"> click here</a> 
+                    and download either the Windows Executable or jar file to run with a Java Interpeter.</p> -->
+                <a href="https://github.com/jmshima01/PlayClueGame"><img src="images/clueGame.png"></a>
+            </div>
+        
+            <div class="row">
+                <!-- <h3>Web M.D. Plus (PostgreSQL/Python)</h3> -->
+            <!-- <p>A fun clone of Web M.D. to practice desigining practical relational databases using PostgreSQL and Python. Click <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit">here</a> to read the paper and <a href="https://github.com/jmshima01/WebMDPlus">here</a> to the source code.</p> -->
+                <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit"><img src="images/webmd.png" width="900" height="700"></a>
+            
+            
+        
+            
+                <!-- <h3>Multiband Low Frequency RF Jammer (C/C++)</h3> -->
+            <!-- <p>Car theft is on the rise with criminals able to caputre and replicate the signal sent by your car keys with as little as 20$ worth of equipment.  
+                But how can one protect themseleves from this?  
+                This project aims to provides a solution by jamming the same band your car keys use, 
+                preventing anyone from wirelessly accessing your car while the jammer is active and in range. <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"> CC1101 Radio Library</a></p> -->
+                <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"><img src="images/rfjammer.jpg"  width="700" height="700"></a>
 
-        <h3>Clue Game (Java)</h3>
-        <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
-            Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  
-            This project was created from the ground up using Java, JUnit, and Swing to create a single 
-            player interpretation of the board game. To play the game, <a href="https://github.com/jmshima01/PlayClueGame"> click here</a> 
-            and download either the Windows Executable or jar file to run with a Java Interpeter.</p>
-        <img src="images/clueGame.png">
-
-
-        <h3>Web M.D. Plus (PostgreSQL/Python)</h3>
-        <p>A fun clone of Web M.D. to practice desigining practical relational databases using PostgreSQL and Python. Click <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit">here</a> to read the paper and <a href="https://github.com/jmshima01/WebMDPlus">here</a> to the source code.</p>
-        <img src="images/webmd.png" width="900" height="700">
+            </div>
         
         
-    </div>
 
-    <h3>Multiband Low Frequency RF Jammer (C/C++)</h3>
-    <p>Car theft is on the rise with criminals able to caputre and replicate the signal sent by your car keys with as little as 20$ worth of equipment.  
-        But how can one protect themseleves from this?  
-        This project aims to provides a solution by jamming the same band your car keys use, 
-        preventing anyone from wirelessly accessing your car while the jammer is active and in range. <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"> CC1101 Radio Library</a></p>
-    <img src="images/rfjammer.jpg"  width="700" height="700">
+    </section>
 
-    <div>
+    <section id="future">
+        <div class="space"></div>
         <h2>Project(s) In The Works!</h2>
         <h3>Fifteen Minute Rule Alarm (Flutter/Dart)</h3>
-        <p> IN PROGRESS: Cross-platform application to set morning alarms based on the 15 minute rule to make mornings easier.</p>
-
-    </div>
+        <p class="center"> IN PROGRESS: Cross-platform application to set morning alarms based on the 15 minute rule to make mornings easier.</p>
+        <div class="space"></div>
+        <div class="space"></div>
+    </section>
 
     <div>
         <h2>Contact Me</h2>
 
-        <a href="https://www.linkedin.com/in/james-shima-jr">Linkedin</a>
-        <a href="mailto:jamesshima@mines.edu">Email: jamesshima@mines.edu</a>
+        <ul class="center">
+            <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
+            <li><a href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
+        </ul>
     </div>
+    <div class="space"></div>
+    <footer class="center">
+        <div class="space"></div>
+        <p>Developed from scatch by James Shima XD
+            Big-ups FrontEnd Expert!
+
+        </p>
+    </footer>
+    <div id="bannerimage"></div>
 </body>
 </html>
 
