@@ -1,8 +1,4 @@
 
-body {
-    background-image: url('images/sticker.jpg')
-}
-
-h1{
-    color: blue;
+p, h1, h2, h3{
+    background-color: antiquewhite;
 }
