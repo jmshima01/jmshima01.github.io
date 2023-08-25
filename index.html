@@ -7,7 +7,7 @@
     <base href="https://jmshima01.github.io" target="_blank">
     <meta charset="utf-8"/>
     <meta name="author" content="James Shima"/>
-    <meta name="description" content="Portfolio for James Shima's current and future work."/>
+    <meta name="description" content="Portfolio for James Shima."/>
     
     <meta name="keywords" content="James Shima Jr., Colorado School of Mines">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> 
@@ -41,9 +41,6 @@ hr{
     background-color: black;
     left:0px;
     top:0px;
-
-
-
 }
 
 .center{
@@ -73,10 +70,19 @@ h1{
 }
 
 
-h2, h3, h4{
+h2{
     text-align: center;
     color: white;
     white-space: pre-line;
+    font-size: 40px;
+}
+
+h3,h4{
+    text-align: center;
+    color: white;
+    white-space: pre-line;
+    font-size: 25px;
+    
 }
 ul {
   list-style-type: none;
@@ -148,7 +154,14 @@ a img:hover {
   vertical-align: middle;
 }
 
+.imgdesc{
+    background-color: grey;
+    opacity: 0;
+}
 
+.imgdesc:hover{
+    opacity: 0.9;
+}
 
 
 
@@ -188,6 +201,8 @@ a img:hover {
         </p>
     </section>
 
+
+    <div class="space"></div>
     <section id="projects">
         <h2>Projects</h2>
         
@@ -198,6 +213,13 @@ a img:hover {
                     Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
                     of spliting the training and testing data.  Source code and more information can be found by <a href="https://github.com/jmshima01/TullyML">clicking here</a>.</p> -->
                 <a href="https://github.com/jmshima01/TullyML"><img src="images/tully.png"></a>
+                <!-- <div class="imgdesc">
+<p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
+                    This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
+                    Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
+                    of spliting the training and testing data.
+
+                </div> -->
                 <!-- <h3>Clue Game (Java)</h3> -->
                 <!-- <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
                     Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  
@@ -247,9 +269,8 @@ a img:hover {
     </div>
     <div class="space"></div>
     <footer class="center">
-        <div class="space"></div>
+
         <p>Developed from scatch by James Shima XD
-            Big-ups FrontEnd Expert!
 
         </p>
     </footer>
