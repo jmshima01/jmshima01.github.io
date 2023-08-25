@@ -1,4 +1,6 @@
-
-p, h1, h2, h3{
-    background-color: antiquewhite;
-}
+#bannerimage {
+    width: 100%;
+    background-image: url("https://jmshima01.github.io/images/sticker.jpg");
+    height: 100px;
+    background-position: center;
+  }
