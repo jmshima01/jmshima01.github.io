@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>James Shima Jr.</title>
+    <title>James Shima Jr."</title>
     <base href="https://jmshima01.github.io" target="_blank">
     <meta charset="utf-8"/>
     <meta name="author" content="James Shima"/>
@@ -19,20 +19,65 @@
 </head>
 
 <style>
+
+.navbar{
+    background-color: black;
+    /* width:100%; */
+    position:fixed;
+    top:0px;
+    left:0px;
+    /* z-index:1000; */
+    opacity:0.8;
+}
+
+.banner{
+    /* background-color: black; */
+    width:100%;
+    height: 100%;
+    /* position:fixed; */
+    background-color: black;
+
+
+
+}
+
+.center{
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+}
+
+p{
+    white-space: pre-line;
+    display:inline; 
+    font-size:1em; 
+    font-weight:normal
+    
+}
+
 .font{
     font-family: "Source Sans Pro", sans-serif;
 }
-h1, h2, h3{
+
+h1{
+    color: white;
     text-align: center;
-    color: white
+    font-size: 70px;
+
+}
+
+
+h2, h3, h4{
+    text-align: center;
+    color: white;
+    white-space: pre-line;
 }
 ul {
   list-style-type: none;
-
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
-  display: table;
+  /* display: table; */
   margin: 0 auto;
   /* background-color: #333; */
 }
@@ -52,43 +97,67 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    border:2px solid cyan;
+    border:3px solid cyan;
     color: cyan;
 
 }
 
 li a img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 body {
    background: #222;
    color: #BBB;
+   width: max-content;
+   margin: auto;
 }
+
+
+.space{
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+
 
 </style>
 
 <body class="font">
     <!-- <div id="bannerimage"></div> -->
+    <!-- <div id="bannerimage"></div> -->
+    
+    <div class="banner">
+        <hr color="black">
+        <h1>James Shima Jr.</h1>
 
-    <h1>James Shima Jr.</h1>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
-        <li><a href="https://github.com/jmshima01"><img src="images/github-mark-white.png" ></a></li>
-        <li><a href="documents/JamesShimaResume.pdf"><img src="images/resume.png"> </a></li>
-    </ul>
-
-
+        <ul class="navbar">
+            <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
+            <li><a href="https://github.com/jmshima01"><img src="images/github-mark-white.png" ></a></li>
+            <li><a href="documents/JamesShimaResume.pdf"><img src="images/resume.png" > </a></li>
+            <li><a href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
+        </ul>
+    <div class="space"></div>
+    <hr color="black">
+    </div>
+    
     <section>
         <h2>About Me</h2>
-        <p>
-            Hi, my name is James Shima and welcome to my website! 
-            I'm a student at Colorado School of Mines graduating with a B.S. in Computer Engineering by Dec 2023. 
-            I've also been accepted into the CS Master's Program at Mines and will graduate from the program in Dec 2024. 
-            On campus, I'm a part of ACM, CyberSec Club, a Student Ambassador and a Lead Computer Science TA. 
-            In addition, have 1 year of industry experience from numerous software engineering internships. 
-            In my free time I enjoy lifting weights, producing music, gaming, and working on cool projects.
+        <h4> 
+            Hello and Welcome to my Website! 
+        </h4>
+        <p class="center">
+            My name is James Shima and I'm a student at Colorado School of Mines.
+            I will be graduating with a B.S. in Computer Engineering by December of 2023! 
+            I've also been accepted into the CS Master's Program at Mines and will graduate 
+            from the program in Dec 2024. On campus, I'm a part of ACM, CyberSec Club, a Student 
+            Ambassador and a Lead Computer Science TA. In addition, have 1 year of industry experience 
+            from numerous software engineering internships. In my free time, I enjoy lifting weights, 
+            producing music, gaming, and working on cool projects.
+
         </p>
     </section>
 
