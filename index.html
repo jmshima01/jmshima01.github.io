@@ -25,6 +25,11 @@
     box-sizing: border-box;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+.burro{
+    width: 200px;
+    height: 200px;
+}
+
 
 
 .navbar{
@@ -34,6 +39,31 @@
     top:0px;
     left:0px;
     opacity:0.8;
+    z-index:100;
+    list-style-type: none;
+    padding: 0;
+  /* overflow: hidden; */
+    text-align: center;
+  /* display: table; */
+    margin: 0 auto;
+  /* background-color: #333; */
+    
+}
+
+.contactnav{
+    /* width:100%; */
+    
+
+    opacity:0.8;
+
+    list-style-type: none;
+    padding: 0;
+  /* overflow: hidden; */
+    text-align: center;
+  display: table;
+    margin: 0 auto;
+  /* background-color: #333; */
+
 }
 
 hr{
@@ -83,15 +113,7 @@ h3,h4{
     font-size: 25px;
     
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-  /* overflow: hidden; */
-  text-align: center;
-  /* display: table; */
-  margin: 0 auto;
-  /* background-color: #333; */
-}
+
 
 li {
   float: left;
@@ -178,6 +200,7 @@ img {
     border-radius: 8px;
     
 }
+
 .wrap .desc{
     position: absolute;
     top: 0;
@@ -226,7 +249,7 @@ img {
         <div class="space"></div>
         <h1>James Shima Jr.</h1>
         <div class="space"></div>
-
+        
         <ul class="navbar">
             <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
             <li><a href="https://github.com/jmshima01"><img src="images/github-mark-white.png" ></a></li>
@@ -235,12 +258,14 @@ img {
         </ul>
         <div class="space"></div>
     </div>
+    <hr>
     
     <div class="intropara">
+        <br>
         <section id="about">
             <h2>About Me</h2>
             <h4> 
-                Hello && welcome to my website!
+                char* greetings = "Hello && Welcome!"
             </h4>
         <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is James Shima and welcome to my website! I'm a student at Colorado School of Mines graduating with a B.S. in Computer Engineering by Dec 2023. 
             I've also been accepted into the CS Master's Program at Mines and will graduate from the program in Dec 2024. 
@@ -252,10 +277,11 @@ img {
     
     </section>
 
-
+    
     <div class="space"></div>
+    <hr>
     <section id="projects">
-        
+        <br>
         <h2>Projects</h2>
         
         <div class="space"></div>
@@ -337,21 +363,31 @@ img {
         <div class="space"></div>
     </section>
 
+<hr>
 
     <section id="education">
-
+        <br>
         <h2>Education</h2>
-        <img src="images/mines.png">
-
+        <h3>Colorado School of Mines</h3>
+        <img class="burro" src="images/mines.png">
+        
+        <p class="center">
+            <br>
+            •  B.S. in Computer Engineering - Dec. 2023<br>
+            •  M.S. in Computer Science     - Dec. 2024
+        </p>
+        
         <div class="space"></div>
+        <!-- <div class="space"></div> -->
     </section>
 
 
-
+<hr>
     <section id="contactme">
+        <br>
         <h2>Contact Me</h2>
-        
-        <ul class="center">
+        <br>
+        <ul class="contactnav">
             <li><a class="contact" href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
             <li><a class="contact" href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
         </ul>
@@ -361,6 +397,7 @@ img {
     
     <footer class="center">
         <p>Developed from scatch by James Shima XD</p>
+        
     </footer>
     
     <div id="bannerimage"></div>
