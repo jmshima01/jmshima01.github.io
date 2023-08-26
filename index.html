@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>James Shima Jr."</title>
+    <title>James Shima Jr.</title>
     <base href="https://jmshima01.github.io" target="_blank">
     <meta charset="utf-8"/>
     <meta name="author" content="James Shima"/>
@@ -19,14 +19,20 @@
 </head>
 
 <style>
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 
 .navbar{
     background-color: black;
     /* width:100%; */
     position:fixed;
     top:0px;
-    /* left:0px; */
-    /* z-index:1000; */
+    left:0px;
     opacity:0.8;
 }
 
@@ -36,7 +42,7 @@ hr{
 
 .banner{
     /* background-color: black; */
-    /* width:100%; */
+    width:100%;
     /* position:fixed; */
     background-color: black;
     left:0px;
@@ -44,31 +50,23 @@ hr{
 }
 
 .center{
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
     display: table;
 }
 
 p{
-    white-space: pre-line;
     display:inline; 
     font-size: larger; 
-    font-weight:normal
-    
-}
-
-.font{
-    font-family: "Source Sans Pro", sans-serif;
+    font-weight:normal;
+    text-align: left;
 }
 
 h1{
     color: white;
     text-align: center;
     font-size: 70px;
-    
-
 }
-
 
 h2{
     text-align: center;
@@ -109,12 +107,11 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    border:3px solid cyan;
+    border:2px solid cyan;
     color: cyan;
-
 }
 
-li a img{
+a img{
     width: 40px;
     height: 40px;
 }
@@ -124,7 +121,6 @@ body {
    color: #BBB;
 
 }
-
 
 .space{
     padding-top: 20px;
@@ -137,7 +133,6 @@ a img:hover {
     opacity: 0.8;
 }
 
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -145,32 +140,84 @@ a img:hover {
 }
 
 .column {
-  flex: 50%;
+  flex: align;
   padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 4px;
   vertical-align: middle;
 }
 
-.imgdesc{
-    background-color: grey;
-    opacity: 0;
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 8px;
 }
 
 .imgdesc:hover{
     opacity: 0.9;
 }
 
+.intropara{
+    width: 50rem;
+    margin: 0 auto;
+    display: table;
+}
 
+
+.wrap{
+    margin:auto;
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 8px;
+    
+}
+.wrap .desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.desc{
+    
+    margin:auto;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+
+
+}
+
+.desc:hover{
+    opacity: 1;
+}
+    
+.desc a{
+    
+    /* border: 1px solid white; */
+    color: #BBB;
+    text-decoration:none;
+}
+
+.desc a:hover{
+    border: 2px solid cyan;
+}
+
+.desc a img{
+    width: 70px;
+    height: 70px;
+}
 
 </style>
 
-<body class="font">
-    <!-- <div id="bannerimage"></div> -->
-    
-    
+<body>
     <div class="banner">
         <hr color="black">
         <h1>James Shima Jr.</h1>
@@ -184,56 +231,103 @@ a img:hover {
         <div class="space"></div>
     </div>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <h4> 
-            Hello and Welcome to my Website! 
-        </h4>
-        <p class="center">
-            My name is James Shima and I'm a student at Colorado School of Mines.
-            I will be graduating with a B.S. in Computer Engineering by December of 2023! 
-            I've also been accepted into the CS Master's Program at Mines and will graduate 
-            from the program in Dec 2024. On campus, I'm a part of ACM, CyberSec Club, a Student 
-            Ambassador and a Lead Computer Science TA. In addition, have 1 year of industry experience 
-            from numerous software engineering internships. In my free time, I enjoy lifting weights, 
-            producing music, gaming, and working on cool projects.
-
+    <div class="intropara">
+        <section id="about">
+            <h2>About Me</h2>
+            <h4> 
+                Hello and Welcome to my Website! 
+            </h4>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is James Shima and welcome to my website! I'm a student at Colorado School of Mines graduating with a B.S. in Computer Engineering by Dec 2023. 
+            I've also been accepted into the CS Master's Program at Mines and will graduate from the program in Dec 2024. 
+            On campus, I'm a part of ACM, CyberSec Club, a Student Ambassador and a Lead Computer Science TA. 
+            In addition, have 1 year of industry experience from numerous software engineering internships. 
+            In my free time, I enjoy lifting weights, producing music, gaming, and working on cool projects.
         </p>
+    </div>
+    
     </section>
 
 
     <div class="space"></div>
     <section id="projects">
+        
         <h2>Projects</h2>
         
-            <div class="row">
-                <!-- <h3>Exercise Classifier (Python/TensorFlow)</h3> -->
-                <!-- <p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
+        <div class="space"></div>
+                
+                 
+        <div class="wrap">
+            <img src="images/tully.png">
+        
+            <div class="desc">
+                
+                <h3>Exercise Classifier (Python/TensorFlow)</h3>
+                <div class="space"></div>
+                <p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
                     This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
                     Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
-                    of spliting the training and testing data.  Source code and more information can be found by <a href="https://github.com/jmshima01/TullyML">clicking here</a>.</p> -->
-                <a href="https://github.com/jmshima01/TullyML"><img src="images/tully.png"></a>
-                <!-- <div class="imgdesc">
-<p>Developed proof of concept Convolutional Nueral Network to classify five different excercises.  
-                    This was done by preprosessing x,y,z axis acceleration data as a 3D tensor through a multilayered CNN. 
-                    Due to a current small dataset (less than 1000 samples) accuracy ranged from 86-95% depending on the distribution 
-                    of spliting the training and testing data.
-
-                </div> -->
-                <!-- <h3>Clue Game (Java)</h3> -->
-                <!-- <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
+                    of spliting the training and testing data.</p>
+                <div class="space"></div>
+                <a class="center" href="https://github.com/jmshima01/TullyML"><img src="images/github-mark-white.png"></a>
+                
+            
+            </div>  
+        </div>
+        <div class="space"></div>
+        <div class="wrap">
+            <img src="images/clueGame.png">
+        
+            <div class="desc">
+                
+                <h3>Clue Game (Java)</h3>
+                <div class="space"></div>
+                <p>Clue is a murder mystery board game for three to six players that was devised in 1943 by British board game designer 
                     Anthony E. Pratt. The game was first manufactured by Waddingtons in the United Kingdom in 1949.  
                     This project was created from the ground up using Java, JUnit, and Swing to create a single 
-                    player interpretation of the board game. To play the game, <a href="https://github.com/jmshima01/PlayClueGame"> click here</a> 
-                    and download either the Windows Executable or jar file to run with a Java Interpeter.</p> -->
-                <a href="https://github.com/jmshima01/PlayClueGame"><img src="images/clueGame.png"></a>
-            </div>
+                    player interpretation of the board game. To play the game, click the github logo!</p>
+                <div class="space"></div>
+                <a class="center" href="https://github.com/jmshima01/PlayClueGame"><img src="images/github-mark-white.png"></a>
+                
+            
+            </div>  
+        </div>
+        <div class="space"></div>
+        <div class="wrap">
+            <img src="images/webmd.png">
         
-            <div class="row">
+            <div class="desc">
+                
+                <h3>WebM.D. Plus (PostgreSQL/Python)</h3>
+                <div class="space"></div>
+                <p>A fun clone of Web M.D. to practice desigining practical relational databases using PostgreSQL and Python. Click the github logo to view the repo.</p>
+                <div class="space"></div>
+                <a class="center" href="https://github.com/jmshima01/WebMDPlus"><img src="images/github-mark-white.png"></a>
+            </div>  
+        </div>                         
+                       
+        <div class="space"></div>
+        <div class="wrap">
+            <img src="images/rfjammer.jpg">
+        
+            <div class="desc">
+                <h3>Multiband Low Frequency RF Jammer (C/C++)</h3>
+                <div class="space"></div>
+                <p>Car theft is on the rise with criminals able to caputre and replicate the signal sent by your car keys with as little as 20$ worth of equipment.  
+                    But how can one protect themseleves from this?  
+                    This project aims to provides a solution by jamming the same band your car keys use, 
+                    preventing anyone from wirelessly accessing your car while the jammer is active and in range.</p>
+                <div class="space"></div>
+                <a class="center" href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"><img src="images/github-mark-white.png"></a>
+            </div>  
+        </div>
+            <!-- <div class="row"> -->
                 <!-- <h3>Web M.D. Plus (PostgreSQL/Python)</h3> -->
             <!-- <p>A fun clone of Web M.D. to practice desigining practical relational databases using PostgreSQL and Python. Click <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit">here</a> to read the paper and <a href="https://github.com/jmshima01/WebMDPlus">here</a> to the source code.</p> -->
-                <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit"><img src="images/webmd.png" width="900" height="700"></a>
-            
+                
+                <!-- <div class="column">
+                    <a href="https://docs.google.com/document/d/1dWX6xzxq-Ppkfp85tQCRLUGsVqsAimHJZZ_TXPOnDqY/edit"><img src="images/webmd.png"></a>
+                    <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"><img src="images/rfjammer.jpg"></a>
+                </div> -->
             
         
             
@@ -242,9 +336,9 @@ a img:hover {
                 But how can one protect themseleves from this?  
                 This project aims to provides a solution by jamming the same band your car keys use, 
                 preventing anyone from wirelessly accessing your car while the jammer is active and in range. <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"> CC1101 Radio Library</a></p> -->
-                <a href="https://github.com/jmshima01/SmartRC-CC1101-Driver-Lib"><img src="images/rfjammer.jpg"  width="700" height="700"></a>
+               
 
-            </div>
+            <!-- </div> -->
         
         
 
@@ -253,6 +347,7 @@ a img:hover {
     <section id="future">
         <div class="space"></div>
         <h2>Project(s) In The Works!</h2>
+        <div class="space"></div>
         <h3>Fifteen Minute Rule Alarm (Flutter/Dart)</h3>
         <p class="center"> IN PROGRESS: Cross-platform application to set morning alarms based on the 15 minute rule to make mornings easier.</p>
         <div class="space"></div>
@@ -261,7 +356,7 @@ a img:hover {
 
     <div>
         <h2>Contact Me</h2>
-
+        <div class="space"></div>
         <ul class="center">
             <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
             <li><a href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
@@ -269,7 +364,6 @@ a img:hover {
     </div>
     <div class="space"></div>
     <footer class="center">
-
         <p>Developed from scatch by James Shima XD
 
         </p>
