@@ -10,8 +10,7 @@
     <meta name="description" content="Portfolio for James Shima."/>
     
     <meta name="keywords" content="James Shima Jr., Colorado School of Mines">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> 
-        
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <!--CSS-->
     <link rel="stylesheet" href="styles/style.css">
     <!--Think about adding my own icon to website-->
@@ -42,7 +41,7 @@ hr{
 
 .banner{
     /* background-color: black; */
-    width:100%;
+    width:auto;
     /* position:fixed; */
     background-color: black;
     left:0px;
@@ -184,15 +183,12 @@ img {
 
 }
 .desc{
-    
     margin:auto;
     background: rgba(0, 0, 0, 0.9);
     opacity: 0;
     border-radius: inherit;
     height: inherit;
     width: inherit;
-
-
 }
 
 .desc:hover{
@@ -215,8 +211,12 @@ img {
     height: 70px;
 }
 
-</style>
 
+.contact:hover{
+    border: 1px solid aqua;
+}
+
+</style>
 <body>
     <div class="banner">
         <hr color="black">
@@ -357,9 +357,10 @@ img {
     <div>
         <h2>Contact Me</h2>
         <div class="space"></div>
+        
         <ul class="center">
-            <li><a href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
-            <li><a href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
+            <li><a class="contact" href="https://www.linkedin.com/in/james-shima-jr"><img src="images/linkd.png"></a></li> 
+            <li><a class="contact" href="mailto:jamesshima@mines.edu"><img src="images/email.png" > </a></li>
         </ul>
     </div>
     <div class="space"></div>
