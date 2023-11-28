@@ -2682,7 +2682,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: white !important;
 				}
 
 				.tiles article > a h2 {
@@ -3104,6 +3104,7 @@ input, select, textarea {
 				-ms-transform: translateX(16.5em);
 				transform: translateX(16.5em);
 				width: 16.5em;
+				
 			}
 
 				#menu > .inner {
