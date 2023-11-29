@@ -201,8 +201,8 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.15em;
-		color: navy;
+		letter-spacing: 0.01em;
+		color: goldenrod;
 	}
 
 	h2{
@@ -218,12 +218,12 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		letter-spacing: 0.01em;
-		color: goldenrod;
+		color: rgba(1, 58, 129,1);
 	}
 	
 
 		h2 a, h3 a, h4 a, h6 a {
-			color: navy;
+			color: rgba(1, 58, 129,1);
 		}
 
 	h2 {
