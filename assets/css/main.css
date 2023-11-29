@@ -145,7 +145,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: blue;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
@@ -172,6 +172,7 @@ input, select, textarea {
 		line-height: 1.3;
 		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
+		color: navy
 	}
 
 		h1 a {
@@ -195,16 +196,34 @@ input, select, textarea {
 
 		}
 
-	h2, h3, h4, h5, h6 {
+	h3, h4, h6 {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.15em;
+		color: navy;
 	}
 
-		h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+	h2{
+		font-weight: 900;
+		line-height: 1.5;
+		margin: 0 0 2em 0;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: white;
+	}
+	h5{
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0 0 2em 0;
+		letter-spacing: 0.01em;
+		color: goldenrod;
+	}
+	
+
+		h2 a, h3 a, h4 a, h6 a {
+			color: navy;
 		}
 
 	h2 {
