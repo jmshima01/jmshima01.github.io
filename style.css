@@ -1,0 +1,30 @@
+body {
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+}
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+    .topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+a:hover{
+    color:aquamarine;
+}
