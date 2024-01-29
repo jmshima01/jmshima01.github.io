@@ -1,11 +1,10 @@
-
-
 body {
     background-color: Canvas;
     color: CanvasText;
     color-scheme: light dark;
     font-family: Courier New;
 }
+
 img {
     width: 100%;
     display: block;
