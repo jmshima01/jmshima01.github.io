@@ -1,7 +1,10 @@
+
+
 body {
     background-color: Canvas;
     color: CanvasText;
     color-scheme: light dark;
+    font-family: Courier New;
 }
 
 .centered{
@@ -9,6 +12,9 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    text-wrap: left;
+    word-wrap: break-word;
+    overflow: hidden;
 }
     .topnav {
     background-color: transparent;
@@ -26,4 +32,15 @@ body {
 }
 a:hover{
     color:aquamarine;
+}
+
+.para{
+    width: 900px;
+    margin:0 auto;
+    text-align: center;
+      
+}
+p {
+    white-space: normal;
+    display:inline-block;
 }
