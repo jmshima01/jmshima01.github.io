@@ -1,0 +1,53 @@
+body {
+    background-color: #1c1c1c;
+    color: #FFF;
+    font-family: Iosevka, monospace;
+    line-height: 1.4;
+    font-size: 1.1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: rgb(255, 132, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:hover img{
+    opacity: 0.7;
+}
+header {
+    margin-bottom: 2em;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+footer {
+    color: #777;
+    border-top: 1px solid #444;
+    text-align: center;
+    margin: 1em 0;
+}
+
+footer img {
+    width: 100%;
+    max-width: 800px;
+}
+
+footer small {
+    display: block;
+    margin-top: 1em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 1em;
+}
