@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CSCI-128 Fall 2024</title>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="James Shima" />
+    <meta name="description" content="CSCI 128 Fall 2024" />
+    <meta name="keywords" content="James Shima, Colorado School of Mines">
+    <link rel="stylesheet" href="128.css">
+    <link rel="icon" type="image/x-icon" href="img/11577.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CSCI 128 - Fall 2024</h1>
+
+            <h3>
+                | <a href="csci128.html">Home</a> |
+                <a href="recordings.html">Recording/Slides</a> |
+                <a href="tips.html">Tutorials</a> |
+                <a href="faq.html">FAQ</a> |
+                <a href="finalgradecalc.html">Final Grade Calculator</a> |
+            </h3>
+        </header>
+        <main>
+            
+            
+            <label for="grade_have">Current Grade</label><br>
+            <input type="text" placeholder="(e.g. 85.7)"  id="grade_have" name="grade_have"> %<br><br>
+            <label for="grade_want">Grade Wanted</label><br>
+            <input type="text" placeholder="(e.g. 70)" id="grade_want" name="grade_want"> %<br><br>
+            <label for="worth">Assignment Weight %</label><br>
+            <input type="text" placeholder="(e.g. 20)" id="worth" name="worth"> %<br><br>
+            <input type="submit" onclick="return calculateGrade();"value="Calulate Grade You Need on Assignment">
+            
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p id="popupMessage">This is a popup message!</p>
+                    <button id="okButton" class="ok-button">OK</button>
+                </div>
+            </div>
+
+
+            <script>
+                function calculateGrade() {
+                    let curr = document.getElementById("grade_have");
+                    let want = document.getElementById("grade_want");
+                    let percent = document.getElementById("worth");
+
+                    if (!isNaN(curr.value) && curr.value.trim() !== '') {
+                        curr = parseFloat(curr.value);   
+                    } else {
+                        alert("Invalid Current Grade. It must be a number.");
+                        return false;
+                    }
+                    if (!isNaN(want.value) && want.value.trim() !== '') {
+                        want = parseFloat(want.value);   
+                    } else {
+                        alert("Invalid Wanted Grade. It must be a number");
+                        return false;
+                    }
+                    if (!isNaN(percent.value) && percent.value.trim() !== '') {
+                        percent = parseFloat(percent.value);
+                    } else {
+                        alert("Invalid Percentage. It must be a number");
+                        return false;
+                    }
+                    console.log(typeof(percent));
+                    grade_needed = ((want - curr*(1-(percent/100.0))) / percent) * 100.0; 
+                    console.log(grade_needed);
+                    grade_needed = grade_needed.toFixed(2);
+                    const mes = `You need a ${grade_needed}%`;
+                    document.getElementById('popupMessage').textContent = mes; // Update popup content
+                    document.getElementById('popup').style.display = 'block'; // Show the popup
+                    
+                    document.getElementById('okButton').addEventListener('click', function() {
+                    document.getElementById('popup').style.display = 'none'; // Hide the popup when OK is clicked
+                    });                    
+                }
+            </script>
+              
+              
+              
+        </main>
+        
+        <footer>
+            <small>
+                Have a question? Need help? ask on <a href="">Ed</a>
+            </small>
+            <small>
+                Developed by James Shima
+            </small>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

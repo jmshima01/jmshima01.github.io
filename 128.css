@@ -51,3 +51,87 @@ footer small {
     max-width: 800px;
     margin: 1em;
 }
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(255, 132, 0);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: rgb(2, 94, 44);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(54, 101, 255);
+}
+
+#popupButton, .ok-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    /* transition: background-color 0.3s ease; */
+}
+
+#popupButton:hover, .ok-button:hover {
+    background-color: #555;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #1b1b1b;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #bbb;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+}
