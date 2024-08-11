@@ -70,7 +70,7 @@ input[type="text"]:focus {
 }
 
 input[type="submit"] {
-    background-color: rgb(2, 94, 44);
+    background-color: rgb(65, 65, 65);
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
