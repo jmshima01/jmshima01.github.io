@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0; /* Ensure no default padding */
 }
 
 a,
@@ -21,9 +22,11 @@ a:active {
 a:hover {
     text-decoration: underline;
 }
-a:hover img{
+
+a:hover img {
     opacity: 0.7;
 }
+
 header {
     margin-bottom: 2em;
     text-align: center;
@@ -40,6 +43,7 @@ footer {
 footer img {
     width: 100%;
     max-width: 800px;
+    height: auto; /* Ensure images are responsive */
 }
 
 footer small {
@@ -50,10 +54,12 @@ footer small {
 .container {
     max-width: 800px;
     margin: 1em;
+    padding: 0 1em; /* Add padding for better spacing on small screens */
 }
 
 input[type="text"] {
-    width: 300px;
+    width: 100%; /* Make input full width for better mobile experience */
+    max-width: 300px;
     padding: 10px;
     font-size: 16px;
     background-color: #333;
@@ -92,7 +98,6 @@ input[type="submit"]:hover {
     border: none;
     background-color: #444;
     color: #fff;
-    /* transition: background-color 0.3s ease; */
 }
 
 #popupButton:hover, .ok-button:hover {
@@ -116,8 +121,9 @@ input[type="submit"]:hover {
     margin: 15% auto;
     padding: 20px;
     background-color: #1b1b1b;
-    width: 200px;
-    border-radius: 20px;
+    width: 80%; /* Make the popup responsive */
+    max-width: 400px; /* Limit max width */
+    border-radius: 10px; /* Adjusted for better appearance */
     text-align: center;
     color: #fff;
 }
@@ -125,7 +131,7 @@ input[type="submit"]:hover {
 .close {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px; /* Adjusted for better fit */
     color: #bbb;
     font-size: 20px;
     font-weight: bold;
@@ -134,4 +140,58 @@ input[type="submit"]:hover {
 
 .close:hover {
     color: #fff;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em; /* Adjust font size for smaller screens */
+        padding: 0.5em; /* Add padding for smaller screens */
+    }
+
+    header {
+        margin-bottom: 1.5em; /* Adjust margin for smaller screens */
+    }
+
+    footer {
+        margin: 0.5em 0; /* Adjust margin for smaller screens */
+    }
+
+    .container {
+        margin: 0.5em; /* Adjust margin for smaller screens */
+    }
+
+    input[type="text"] {
+        max-width: 100%; /* Ensure input fits smaller screens */
+    }
+
+    .popup-content {
+        width: 90%; /* Adjust popup width for smaller screens */
+        max-width: 350px; /* Adjust max width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+
+    header,
+    footer {
+        margin-bottom: 1em; /* Further adjust margins for very small screens */
+        margin: 0.5em 0; /* Reduce margin for better fit */
+    }
+
+    .container {
+        margin: 0.5em; /* Ensure proper spacing */
+    }
+
+    input[type="text"] {
+        max-width: 100%; /* Ensure input fits very small screens */
+    }
+
+    .popup-content {
+        width: 95%; /* Adjust popup width for very small screens */
+        max-width: 300px; /* Adjust max width for very small screens */
+    }
 }
