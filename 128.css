@@ -1,5 +1,5 @@
 body {
-    background-color: #1c1c1c;
+    background-color: #141414;
     color: #FFF;
     font-family: Iosevka, monospace;
     line-height: 1.4;
@@ -14,7 +14,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-    color: rgb(255, 132, 0);
+    color: rgb(86, 170, 255);
     text-decoration: none;
 }
 
