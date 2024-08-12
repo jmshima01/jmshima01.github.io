@@ -85,3 +85,9 @@ footer{
 	padding-top:1em;
 	text-align:center
 }
+
+header{
+	border-bottom:2px solid #b6b6b6;
+    margin-bottom:2em;
+    padding-bottom:1em;
+}
