@@ -1,62 +1,5 @@
 
- body {
-    background-color: #141414;
-    color: #FFF;
-    font-family: Iosevka, monospace;
-    line-height: 1.4;
-    font-size: 1.1em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0; 
-}
 
-a,
-a:hover,
-a:visited,
-a:active {
-    color: rgb(86, 170, 255);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:hover img {
-    opacity: 0.7;
-}
-
-header {
-    margin-bottom: 2em;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-footer {
-    color: #777;
-    border-top: 1px solid #444;
-    text-align: center;
-    margin: 1em 0;
-}
-
-footer img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-}
-
-footer small {
-    display: block;
-    margin-top: 1em;
-}
-
-.container {
-    max-width: 800px;
-    margin: 1em;
-    padding: 0 1em; 
-}
 
 input[type="text"] {
     width: 100%; 
@@ -72,7 +15,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: rgb(255, 132, 0);
+    border-color: rgb(174, 0, 255);
     outline: none;
 }
 
@@ -114,7 +57,7 @@ input[type="submit"]:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {
@@ -129,70 +72,90 @@ input[type="submit"]:hover {
     color: #fff;
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px; 
-    color: #bbb;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-regular.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-regular.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-regular.ttf?v=3.6.3)format("truetype");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-bold.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-bold.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-bold.ttf?v=3.6.3)format("truetype");
+	font-weight:700;
+	font-style:bold
+}
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-oblique.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-oblique.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-oblique.ttf?v=3.6.3)format("truetype");
+	font-weight:italic;
+	font-style:italic
 }
 
-.close:hover {
-    color: #fff;
+html{
+	overflow-y:scroll
+}
+body{
+	max-width:800px;
+	margin:40px auto;
+	padding:0 10px;
+	font-size:15px;
+	line-height:1.5;
+	font-family:Iosevka,monospace;
+	color:#dadada;
+    background-color: #141414;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+    color: rgb(188, 150, 250);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: dotted underline;
 }
 
 
-@media (max-width: 768px) {
-    body {
-        font-size: 1em;
-        padding: 0.5em; 
-    }
-
-    header {
-        margin-bottom: 1.5em; 
-    }
-
-    footer {
-        margin: 0.5em 0;
-    }
-
-    .container {
-        margin: 0.5em; 
-    }
-
-    input[type="text"] {
-        max-width: 100%; 
-    }
-
-    .popup-content {
-        width: 90%;
-        max-width: 350px; 
-    }
+h1,h2,h3{
+	line-height:1.2
+}
+h1{
+	font-size:2em
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9em;
-    }
+article{
+	padding:24px 0
+}
 
-    header,
-    footer {
-        margin-bottom: 1em; 
-        margin: 0.5em 0; 
-    }
+.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%
+}
 
-    .container {
-        margin: 0.5em; 
-    }
 
-    input[type="text"] {
-        max-width: 100%;
-    }
+picture{
+	margin:0 auto;
+	display:block
+}
+img{
+	transition-property:all;
+	transition-duration:.2s;
+	transition-timing-function:ease;
+	max-width:100%;
+	opacity:.9
+}
+img:hover,img:active,img:focus{
+	opacity:1;
+	transform:scale(1.02)
+}
 
-    .popup-content {
-        width: 95%; 
-        max-width: 300px;
-    }
-} 
+
+footer{
+	border-top:2px solid #b6b6b6;
+	margin-top:2em;
+	padding-top:1em;
+	text-align:center
+}

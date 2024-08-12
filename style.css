@@ -1,16 +1,35 @@
-body {
-    background-color: #141414;
-    color: #FFF;
-    font-family: Iosevka, monospace;
-    line-height: 1.4;
-    font-size: 1.1em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0; /* Added to prevent default padding on body */
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-regular.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-regular.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-regular.ttf?v=3.6.3)format("truetype");
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-bold.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-bold.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-bold.ttf?v=3.6.3)format("truetype");
+	font-weight:700;
+	font-style:bold
+}
+@font-face{
+	font-family:iosevka;
+	src:url(/fonts/iosevka/woff2/iosevka-oblique.woff2?v=3.6.3)format("woff2"),url(/fonts/iosevka/woff/iosevka-oblique.woff?v=3.6.3)format("woff"),url(/fonts/iosevka/ttf/iosevka-oblique.ttf?v=3.6.3)format("truetype");
+	font-weight:italic;
+	font-style:italic
 }
 
+html{
+	overflow-y:scroll
+}
+body{
+	max-width:800px;
+	margin:40px auto;
+	padding:0 10px;
+	font-size:15px;
+	line-height:1.5;
+	font-family:Iosevka,monospace;
+	color:#dadada;
+    background-color: #141414;
+}
 a,
 a:hover,
 a:visited,
@@ -20,79 +39,49 @@ a:active {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: dotted underline;
 }
 
-a:hover img {
-    opacity: 0.7;
+
+h1,h2,h3{
+	line-height:1.2
+}
+h1{
+	font-size:2em
 }
 
-header {
-    margin-bottom: 2em;
-    text-align: center;
-    border-bottom: 1px solid #444;
+article{
+	padding:24px 0
 }
 
-footer {
-    color: #777;
-    border-top: 1px solid #444;
-    text-align: center;
-    margin: 1em 0;
+.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%
 }
 
-footer img {
-    width: 100%;
-    max-width: 800px;
-    height: auto; /* Ensures images are responsive */
+
+picture{
+	margin:0 auto;
+	display:block
+}
+img{
+	transition-property:all;
+	transition-duration:.2s;
+	transition-timing-function:ease;
+	max-width:100%;
+	opacity:.9
+}
+img:hover,img:active,img:focus{
+	opacity:1;
+	transform:scale(1.02)
 }
 
-footer small {
-    display: block;
-    margin-top: 1em;
-}
 
-.container {
-    max-width: 800px;
-    margin: 1em;
-    padding: 0 1em; /* Added padding for better spacing on small screens */
-}
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-    body {
-        font-size: 1em; /* Adjust font size for smaller screens */
-        padding: 0.5em; /* Added padding for smaller screens */
-    }
-
-    header {
-        margin-bottom: 1.5em; /* Adjust margin for smaller screens */
-    }
-
-    footer {
-        margin: 0.5em 0; /* Adjust margin for smaller screens */
-    }
-
-    .container {
-        margin: 0.5em; /* Adjust margin for smaller screens */
-    }
-
-    footer img {
-        max-width: 100%; /* Ensure images do not exceed the screen width */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9em; /* Further adjust font size for very small screens */
-    }
-
-    header,
-    footer {
-        margin-bottom: 1em; /* Further adjust margins for very small screens */
-        margin: 0.5em 0; /* Reduce margin for better fit */
-    }
-
-    .container {
-        margin: 0.5em; /* Ensure proper spacing */
-    }
+footer{
+	border-top:2px solid #b6b6b6;
+	margin-top:2em;
+	padding-top:1em;
+	text-align:center
 }
