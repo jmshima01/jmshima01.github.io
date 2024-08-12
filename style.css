@@ -42,14 +42,6 @@ a:hover {
     text-decoration: dotted underline;
 }
 
-
-h1,h2,h3{
-	line-height:1.2
-}
-h1{
-	font-size:2em
-}
-
 article{
 	padding:24px 0
 }
@@ -60,7 +52,6 @@ article{
 	margin-right:auto;
 	width:100%
 }
-
 
 picture{
 	margin:0 auto;
@@ -90,4 +81,5 @@ header{
 	border-bottom:2px solid #b6b6b6;
     margin-bottom:2em;
     padding-bottom:1em;
+	text-align:center
 }
