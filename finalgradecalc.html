@@ -32,13 +32,13 @@
         <main>
             
             
-            <label for="grade_have">Current Grade</label><br>
-            <input type="text" placeholder="(e.g. 85.7)"  id="grade_have" name="grade_have"><br><br>
-            <label for="grade_want">Grade Wanted</label><br>
-            <input type="text" placeholder="(e.g. 70)" id="grade_want" name="grade_want"> <br><br>
-            <label for="worth">Assignment Weight %</label><br>
-            <input type="text" placeholder="(e.g. 20)" id="worth" name="worth"> <br><br>
-            <input type="submit" onclick="return calculateGrade();"value="Calulate Grade You Need on Assignment">
+            <h3>Current Grade</h3>
+            <h3><input type="text" placeholder="(e.g. 85.7)"  id="grade_have" name="grade_have"></h3><br>
+            <h3>Grade Wanted</h3>
+            <h3><input type="text" placeholder="(e.g. 70)" id="grade_want" name="grade_want"></h3> <br>
+            <h3>Assignment % Worth</h3>
+            <h3><input type="text" placeholder="(e.g. 20)" id="worth" name="worth"></h3><br>
+            <h3><input type="submit" onclick="return calculateGrade();"value="Calulate Grade You Need on Assignment"></h3>
             
             <div id="popup" class="popup">
                 <div class="popup-content">
@@ -56,19 +56,19 @@
                     if (!isNaN(curr.value) && curr.value.trim() !== '') {
                         curr = parseFloat(curr.value);   
                     } else {
-                        alert("Invalid Current Grade. It must be a number.");
+                        // alert("Invalid Current Grade. It must be a number.");
                         return false;
                     }
                     if (!isNaN(want.value) && want.value.trim() !== '') {
                         want = parseFloat(want.value);   
                     } else {
-                        alert("Invalid Wanted Grade. It must be a number");
+                        // alert("Invalid Wanted Grade. It must be a number");
                         return false;
                     }
                     if (!isNaN(percent.value) && percent.value.trim() !== '') {
                         percent = parseFloat(percent.value);
                     } else {
-                        alert("Invalid Percentage. It must be a number");
+                        // alert("Invalid Percentage. It must be a number");
                         return false;
                     }
                     console.log(typeof(percent));
