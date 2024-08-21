@@ -73,10 +73,10 @@ x = 'A' # this is a STRING as well but more formally called a CHAR.  A string is
 x = [] # this is a LIST, it can hold multiple variables/types or items for you. This one is empty
 x = [5, 5.1, "Hello", 'A', 0, 3.14] # they are usefull for storing groups of things in one place
 
-x = True # This is a Boolean aka a True or False value
-x = False 
+5 # what does this do?
+# NOTHING! its just a 5 floating in empty space within our program without a variable to be assigned to xd
+# this is an example of a SEMANTIC ERROR (an error that works but doesn't do what we want)
 
-x = None # like it say this is a variable holding a value/type of nothing
 
 x = float("infinity") # trick if you need infinity
 
@@ -120,21 +120,10 @@ x = 5.2e11 # 520000000000.0 lot nicer than writing all those zeros!
 # 1e3 means 1 * 10^3 = 1000
 # CAREFUL this give you a float and not an int so use the x = int(x) statement if needed
 
-# Conditionals
+x = x % 2 # Gives us the remainder when dividing by 2 
+# (think back to 3rd grade long division and you did R for the remainder)
 
-# How can I tell if a number is even or odd?
-if (x % 2 == 0):
-    print(f"{x} is Even")
-else:
-    print(f"{x} is Odd")
-    
-# Alternatively 
-if (x & 1 == 0): # more on this later when we talk about binary!
-    print(f"{x} is Even")
-else:
-    print(f"{x} is Odd")
-
-
+x = x // 2 # division but chop off any decimal point (gives us a integer without rounding)
 
 
             </code></pre>
