@@ -135,8 +135,169 @@ Variable Names:
 - No dashes! or other special symbols except _
 - No words reserved for python (sum max min count int print ...) are a few No Nos
 """
-            </code></pre>
-        </main>
+</code></pre>
+
+<h2>Week 2 - Lists, Strings, and Binary Oh My!</h2>
+<h3>f-strings</h3>
+f strings or "format" strings are a nice way to print your output without using commas
+<pre><code>
+x = 5
+print(f"the value of x is {x}")
+print(f"x+1 is {x+1}!")
+# the value of x is 5
+# x+1 is 6
+</code></pre>
+Nice right!?
+<h3>Rounding</h3>
+f strings allow you to round floats as well!
+<pre><code> print(f"round this number to 2 decimal places {2.111111:.2f}")</code></pre>
+just add the :.Xf where X is the number of decimal places to add/round. This works even if its zero it wil add X amount of zeros to the end.
+<h3>String Magic</h3>
+<pre><code>
+x = "hello"
+y = " world!"
+print(x+y)
+# hello world!
+
+print(x*5)
+# hellohellohellohellohello
+
+print(f'{(x+" ")*5}') # notice I had to change "" and '' in an f string!
+# hello hello hello hello hello
+</code></pre>        
+<h3>String Methods</h3>
+the .split() method will seperate a string into elements of a list seperated by whitespace i.e(spaces newlines tabs)
+the .join() method will take in a list and do the opposite of split joining each element of the list by the String
+example
+<pre><code>
+s = "hello world!"
+s = s.split()
+print(s)
+# ["hello", "world!"]
+
+s = " ".join(s)
+print(s)
+# hello world!
+
+s = "hello@$!there@$!mate"
+s = s.split("@$!")
+print(s)
+# ["hello", "there", "mate"]
+
+s = "@".join(["my","dog","tommy"])
+print(f"{s}")
+# my@dog@tommy
+</code></pre>
+
+<h3>Lists and List Methods</h3>
+<ul>
+    <li>sorted() sorts a list</li>
+    <li>map() applies a function to each list member</li>
+    <li>max() takes the max value from the list</li>
+    <li>min() takes the minimum value from the list</li>
+    <li>.index() takes in an element and returns the first index of its location</li>
+    <li>.append() adds an element to the end of a list</li>
+    <li>.pop() removes an element from the end of a list</li>
+    <li>.remove() removes all element from the the list</li>
+
+</ul>
+<pre><code>
+l = []
+l.append(1)
+l.append(3)
+l.append(2)
+print(l)
+# [1, 3, 2]
+
+l = sorted(l)
+print(l)
+# [1, 2, 3]
+
+l = list(map(str, l))
+print(l)
+# ["1", "2", "3"]
+l = list(map(int, l)) # convert each element back to int
+
+print(f"MAX:{max(l)}, MIN:{min(l)}")
+# MAX:3, MIN:1
+
+l.pop()
+print(l)
+# [1, 2]
+
+l.index(1)
+# 0
+l.index(2)
+# 1
+l.index("hello")
+# Error!
+</code></pre>
+<h3>Slicing</h3>
+uses the [] operator -> [start index : end index(non-inclusive) : optional step]<br><br>
+REMEBER THIS: <br>
+<h4>Reverse a string/list</h4> 
+<pre><code>
+l = [1,2,3]
+l = l[::-1]
+print(l)
+# [3,2,1]
+</code></pre>
+<pre><code>
+s = "hello"
+print(s[0])
+# h
+
+print(s[-1])
+# o
+
+print(s[-2])
+# l
+
+print(s[1:])
+# ello
+
+print(s[2:4])
+# ll
+
+print(s[::-1])
+# olleh
+
+"""
+Everything above applies to lists as well
+"""
+</code></pre>
+
+
+<h3>Mutable vs Immutable</h3>
+Mutable -> you can change/reassign an element in it! ex: lists, dictionaries<br>
+Immutable -> you cannot change any of its elements! example: strings, tuples
+<pre><code>
+l = ["H","I"]
+l[0] = "h"
+# ["h", "I"]
+
+s = "hello"
+s[0] = 'H'
+# ERROR strings are Immutable!
+
+# you have to make a new entire string to accomplish this!
+s = "H" + s[1:] 
+# or just...
+s = "Hello"
+print(s)
+# Hello
+</code></pre>
+
+<h2>BINARY</h2>
+<p>
+    Binary is how computers understand instructions or know what to do. Binary is simply a string of 1's and 0's. When python runs under the hood, the computer is actually reading what we tell it to do in this format. <br>i.e print("hello") -> 010101011110101011110101010101101000001010101110101<br>
+    Binary is actually a number system with base 2.  We humans use a base 10 number system due to us having 10 fingers. i.e 15 in base 10 is just 15 while in binary it is 1111.  How this works
+    is simple. 15 = 1 * 10^1 + 5 * 10^0 for base 10! 15 = 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0 for base 2 (binary).  Generally a number in any base can be calculated as. Number = {0...base-1} * base^place + ... + {0...base-1} * base^0.  All that to say when our computers do math or calculations, its doing them in base 2 then just converting or showing us the result in base 10! For example 2+2 = 0010 + 0010 = 0100 = 4
+
+</p>
+In python
+<pre><code>print(bin(4)) # "0b100"</code></pre> the 0b means its a binary string in python, if you want just the numbers you can do bin(4)[2:]
+</main>
         
         <footer>
             <small>
